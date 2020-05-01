@@ -23,9 +23,10 @@ SOFTWARE.
 */
 
 #pragma once
+
 #include <atomic>
-#include <unistd.h>
-#include <sys/syscall.h>
+//#include <unistd.h>
+//#include <sys/syscall.h>
 
 // THR_SIZE must not be less than the max number of threads using tryPush/tryPop, otherwise they could fail forever
 // It's preferred to set THR_SIZE twice the max number, because THR_SIZE is the size of an open addressing hash table
